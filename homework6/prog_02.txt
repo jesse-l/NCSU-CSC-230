@@ -1,0 +1,8 @@
+# We can use curly brackets to create a compound expression (which
+# evaluates to the value of its last subexpression)
+{
+  print "this "
+  print "is "
+  print "a "
+  print "test\n"
+}

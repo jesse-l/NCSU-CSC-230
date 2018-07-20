@@ -1,0 +1,37 @@
+# Listing prime numbers between 2 and 1000
+{
+  # Start checking at a value of 2
+  set val 0
+  
+  # Count up to 1001
+  while less val 1001
+  {
+    set isPrime "true"
+    
+    # look for a factor
+    set factor 2
+
+    # keep trying factors until we pass the square root of val would
+    # be much faster if we could stop this loop early once we found a
+    # factor.  If we had conditional operators.
+    while not less val mul factor factor
+    {
+      # does factor evenly divide val?
+      if equal val mul div val factor factor
+         set isPrime ""
+
+      # move on to the next factor
+      set factor add factor 1
+    }
+
+    # print out the value if it's prime.
+    if isPrime
+    {
+      print val
+      print "\n"
+    }
+
+    # move on to the next value.
+    set val add val 1
+  }
+}

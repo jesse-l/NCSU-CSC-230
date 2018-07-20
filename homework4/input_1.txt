@@ -1,0 +1,6 @@
+a.b
+left c.a
+right a.b
+right b.d
+right d.c
+quit

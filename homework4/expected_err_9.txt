@@ -1,0 +1,2 @@
+Can't open movement script: input_9.txt
+usage: explorer [script_file]

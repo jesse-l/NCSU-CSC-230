@@ -1,0 +1,6 @@
+{
+  print "Hello World\n"
+}
+
+# this comment is OK, but you can't have extra tokens at the end.
+oops

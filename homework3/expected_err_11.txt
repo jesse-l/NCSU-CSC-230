@@ -1,0 +1,1 @@
+usage: drawing <script_file> <image_file>

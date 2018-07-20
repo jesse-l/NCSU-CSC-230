@@ -1,0 +1,75 @@
+# Trying out the rest of the arithmetic and relational operators.
+{
+  # Set some variable values.  We use these later.
+  set a 25
+  set b 50
+  set c 75
+  set d ""
+  set e "true"
+
+  # do some math, with hints of what the results should be.
+  print "Tests with plain-old values\n"
+  
+  print add 10 15
+  print " =? 25\n"
+
+  print sub 10 15
+  print " =? -5\n"
+
+  print mul 7 12
+  print " =? 84\n"
+
+  print div 103 3
+  print " =? 34\n"
+
+  print equal "abc" "xyz"
+  print " =? (empty string, false)\n"
+
+  print equal "abc" "abc"
+  print " =? true\n"
+
+  print less 10 5
+  print " =? (empty string, false)\n"
+
+  print less -7 0
+  print " =? true\n"
+
+  print not ""
+  print " =? true\n"
+
+  print not "abc"
+  print " =? (empty string, false)\n"
+
+  # Now, try the same kind of thing with variables
+  print "Tests with variables\n"
+
+  print add a b
+  print " =? 75\n"
+
+  print sub c a
+  print " =? 50\n"
+
+  print mul a b
+  print " =? 1250\n"
+
+  print div c a
+  print " =? 3\n"
+
+  print equal a b
+  print " =? (empty string, false)\n"
+
+  print equal b 50
+  print " =? true\n"
+
+  print less c b
+  print " =? (empty string, false)\n"
+
+  print less a c
+  print " =? true\n"
+
+  print not d
+  print " =? true\n"
+
+  print not e
+  print " =? (empty string, false)\n"
+}

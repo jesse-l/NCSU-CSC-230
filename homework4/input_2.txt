@@ -1,0 +1,16 @@
+..s
+left o..
+forward ###
+left oo#
+left ..o
+forward sso
+right ooo
+forward ###
+left so#
+forward ###
+left .s#
+forward .s#
+forward ###
+left ..#
+forward ..#
+quit

@@ -1,0 +1,12 @@
+# Testing error handling for divide by zero.
+{
+  set a 25
+  set b 5
+
+  while "true"
+  {
+    print div a b
+    print "\n"
+    set b sub b 1
+  }
+}

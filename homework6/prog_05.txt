@@ -1,0 +1,18 @@
+# Showing assigning a value to a variable.
+{
+  set a "hello world.\n"
+
+  print a
+
+  # There's some unfortunate syntax in this language.  The following is a legal
+  # expression.  It evaluates a variable "test" which evaluates to
+  # empty string, so this does nothing.
+  test
+
+  # Same here.  It would be nice if this was a syntax error, but it's
+  # not.  The following is a misspelling of print, but the parser will
+  # just think it's a variable named "printt" which is undefined, so it
+  # evaluates to empty string.  The literal after that is just taken
+  # as another expression.
+  printt "abc\n"
+}

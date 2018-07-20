@@ -1,0 +1,15 @@
+You're not expected to handle other special syntax
+that might compilcate parsing of comments.  For example
+// you wouldn't consider this a comment.
+
+You don't have to worry about /* nesting /* comments */ like
+this */ (although we could). Your program would just consider this
+to be one comment ending right before the word "like".
+
+You're not expected to give special treatment to things like
+strings.  So, for example "You would /* still consider" this to
+be a comment */ even though a C compiler wouldn't.
+
+Just like C, this /*/ isn't a valid comment.  Really, it's just
+the start of a comment.  I have to end it with */ if I want this
+to be a valid input file.

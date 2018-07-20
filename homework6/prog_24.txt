@@ -1,0 +1,7 @@
+# although variables names can have lots of unusual symbols
+# they still have to start with a letter.
+{
+  set OK-var#name 25
+
+  set -bad-var-name 30
+}

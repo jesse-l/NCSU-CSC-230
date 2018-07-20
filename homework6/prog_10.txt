@@ -1,0 +1,19 @@
+# Trying out an if statement inside a while loop
+{
+  # Start i at zero
+  set i 0
+  
+  # Count up to 100
+  while less i 100
+  {
+    # only print i if it's a multiple of 3
+    if equal i mul div i 3 3
+    {
+      print i
+      print "\n"
+    }
+
+    # increment it
+    set i add i 1
+  }
+}

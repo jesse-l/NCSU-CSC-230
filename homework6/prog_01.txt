@@ -1,0 +1,4 @@
+# A program is a single expression.
+# We can print out literal string (including a few special
+# characters)
+print "hello\t\"world\"\n"

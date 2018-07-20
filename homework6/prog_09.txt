@@ -1,0 +1,16 @@
+# Showing off the while loop.
+{
+  # Start i at zero
+  set i 0
+  
+  # Count up to 100
+  while less i 100
+  {
+    # print the value of i
+    print i
+    print "\n"
+
+    # increment it
+    set i add i 1
+  }
+}

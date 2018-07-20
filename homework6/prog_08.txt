@@ -1,0 +1,86 @@
+# Simple tests of if and while, including the values they evaluate to.
+{
+  # variables for true and false, just to make the tests more interesting.
+  set t "true"
+  set f ""
+  set twenty 20
+
+  # Try out the if expression.  
+  if t
+    print "This should print\n"
+
+  if f
+    print "This should not print\n"
+
+  # Anything other than empty string is true.
+  if twenty
+    print "This should print\n"
+
+  # make sure the if evaluates to the right value, the same value
+  # as its condition.
+
+  # Here, result should get a value of true
+  set result if t print ""
+  print "This should be true:"
+  print result
+  print "\n"
+
+  # Here, result should get a value of 20
+  set result if twenty print ""
+  print "This should be 20:"
+  print result
+  print "\n"
+
+  # Here, result should get a value of empty string
+  set result if f print ""
+  print "This should be empty string:"
+  print result
+  print "\n"
+
+  # try out the while loop.  Count up from 1 to 10.
+  set i 1
+  while less i 11
+  {
+    print i
+    print "\n"
+    set i add i 1
+  }
+
+  # A while loop that does zero iterations
+  set i 1
+  while equal i 2
+  {
+    print i
+    print "\n"
+    set i add i 1
+  }
+
+  # Make sure the while evaluates to the number of iterations
+  
+  # 10 iterations
+  set i 1000
+  set result while less 0 i
+  {
+    set i div i 2
+  }
+  print "Should be 10: "
+  print result
+  print "\n"
+  set i 1000
+
+  # 1 iteration
+  set result while equal i 1000
+    set i "abc"
+  print "Should be 1: "
+  print result
+  print "\n"
+
+  # 0 iterations
+  set result while f
+    print "This should not print\n"
+  print "Should be 0: "
+  print result
+  print "\n"
+}
+    
+  

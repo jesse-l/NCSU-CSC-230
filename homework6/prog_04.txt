@@ -1,0 +1,10 @@
+# Showing add, our first arithmetic operation.
+{
+  # this is essentially 1 + ( 2 + 3 )
+  print add 1 add 2 3
+  print "\n"
+
+  # But this is more like ( 1 + 2 ) + 3
+  print add add 1 2 3
+  print "\n"
+}

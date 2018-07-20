@@ -1,0 +1,2 @@
+Can't open file: prog_23.txt
+usage: interpreter <program-file>

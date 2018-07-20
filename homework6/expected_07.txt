@@ -1,0 +1,22 @@
+Tests with plain-old values
+25 =? 25
+-5 =? -5
+84 =? 84
+34 =? 34
+ =? (empty string, false)
+true =? true
+ =? (empty string, false)
+true =? true
+true =? true
+ =? (empty string, false)
+Tests with variables
+75 =? 75
+50 =? 50
+1250 =? 1250
+3 =? 3
+ =? (empty string, false)
+true =? true
+ =? (empty string, false)
+true =? true
+true =? true
+ =? (empty string, false)

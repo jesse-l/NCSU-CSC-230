@@ -1,0 +1,83 @@
+# A surprise.  I'd go get a cup of coffee while you run this.
+{
+  # (fake) constants describing the region of the complex number plane
+  # we're  going to sample
+  set left -1000
+  set top 0
+  set hstep 14
+  set vstep -28
+  
+  # sample the complex number plane
+
+  # Loop over rows from 0 to 34
+  set row 0
+  while less row 35
+  {
+    # choose an imaginary part based on the row
+    set cImag add top mul row vstep
+    
+    # loop over columns from 0 to 69
+    set col 0
+    while less col 70
+    {
+      # choose an real part based on the column
+      set cReal add left mul col hstep
+
+      set dwell 0
+      set zReal cReal
+      set zImag cImag
+
+      set done ""
+      while not done
+      {
+        # compute z = z^2 + c
+        set zNew add 
+          sub 
+            div mul zReal zReal 1000
+            div mul zImag zImag 1000
+          cReal
+        set zImag add
+          div mul mul zImag zReal 2 1000
+          cImag
+        set zReal zNew
+
+        set dwell add dwell 1
+        if not less dwell 90
+          set done "true"
+        
+        set mag add
+          div mul zReal zReal 1000
+          div mul zImag zImag 1000
+        if not less mag 4000
+          set done "true"
+      }
+      
+      # choose a character to draw with.
+      set sym "@"
+      if less dwell 90
+        set sym "%"
+      if less dwell 80
+        set sym "#"
+      if less dwell 70
+        set sym "*"
+      if less dwell 60
+        set sym "+"
+      if less dwell 50
+        set sym "="
+      if less dwell 40
+        set sym "-"
+      if less dwell 30
+        set sym ":"
+      if less dwell 20
+        set sym "."
+      if less dwell 10
+        set sym " "
+      print sym
+      
+      set col add col 1
+    }
+
+    print "\n"
+    set row add row 1
+  }
+}

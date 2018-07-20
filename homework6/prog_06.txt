@@ -1,0 +1,22 @@
+# illustration of evaluation order and its potential to affect
+{
+  # start x at 25
+  set x 25
+
+  # This should print 10.  The reqirements say the operands of add will
+  # be evaluated in order, so x will first get set to 5 and then it will be
+  # evaluated again as the second argument to add (so, 5 + 5).  If
+  # the arguments of add were evaluated in the opposite order (which
+  # would be inconsistent with the requirements), we would get a value
+  # of 30 printed.
+  print add set x 5 x
+  print "\n"
+
+  # start x back to 25
+  set x 25
+
+  # This is like the example I was trying to describe above.  If we evaluate
+  # x before it gets set to 5, we get (25 + 5).
+  print add x set x 5
+  print "\n"
+}

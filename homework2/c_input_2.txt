@@ -1,0 +1,6 @@
+/*
+  This file is almost all
+  comments. *//* It just has
+  one character that isn't
+  part of a comment. *//*
+  can you find it? */

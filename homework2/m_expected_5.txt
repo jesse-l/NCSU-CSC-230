@@ -1,0 +1,1 @@
+Minimum real: Minimum imaginary: Invalid input

@@ -1,0 +1,43 @@
+# Just exercising the concat and substr operators, if you implemented them.
+{
+  # try some concatenation
+  print concat "hello world" "\n"
+  print concat concat "hello " "world" "\n"
+
+  set str concat "one " "two "
+  print concat str "\n"
+
+  set str concat str "three "
+  print concat str "\n"
+
+  # Get a substring, from character 0 up to but not including
+  # character 3
+  print substr str 0 3
+  print "\n"
+
+  # This may be easier to see.  It should get all the last character
+  # of the first word up to the first character in the second word.
+  print substr str 2 5
+  print "\n"
+
+  # Print out all the letters, one per line.  Would be good to have a
+  # string length function.
+  set i 0
+  while less i 14
+  {
+    print concat substr str i add i 1 "\n"
+    set i add i 1
+  }
+
+  # Should get just the word "one"
+  print substr str -1000 3
+  print "\n"
+
+  # Should get just the "three "
+  print substr str 8 1000
+  print "\n"
+
+  # Should get empty string
+  print substr str 10 5
+  print "\n"
+}

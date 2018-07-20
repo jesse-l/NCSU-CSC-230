@@ -1,0 +1,1 @@
+usage: explorer [script_file]

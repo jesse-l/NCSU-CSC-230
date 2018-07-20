@@ -1,0 +1,4 @@
+This is a test of this program.
+It should be able to make this file
+a little smaller, since it has a lot
+of common words in it.  We'll see.

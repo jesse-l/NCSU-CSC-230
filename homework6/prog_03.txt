@@ -1,0 +1,10 @@
+# Numbers are another kind of literal value.  They
+# are also represented internally as strings.
+{
+  print 1
+  print "\n"
+  print 20
+  print "\n"
+  print 200
+  print "\n"
+}

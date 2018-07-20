@@ -1,0 +1,15 @@
+# another demonstration of a bad variable name
+{
+  # This is OK.  Variables that haven't been assigned just evaluate
+  # to empty string.  This will be treated as 0 by add,
+  # so X will get the value 0
+  set x add 1 good-name
+
+  # See?
+  print x
+  print "\n"
+
+  # but this isn't OK.  the second argument to add isn't a legal
+  # variable name.
+  set y add x 3bad-name4
+}

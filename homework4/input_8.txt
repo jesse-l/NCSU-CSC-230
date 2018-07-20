@@ -1,0 +1,31 @@
+...
+left ...
+forward ...
+right ...
+forward ...
+left ...
+forward #.#
+forward #.#
+forward #.#
+forward #.#
+forward #.#
+forward #.#
+forward #.#
+forward #.#
+forward ...
+forward ##.
+right ..#
+forward ###
+left #.#
+forward #.#
+forward #.#
+forward #.#
+forward ...
+forward ...
+left #..
+forward ###
+right #..
+this-is-not-a-valid-command-Will-you-get-a-buffer-overflow? #.c
+forward #..
+forward ###
+quit

@@ -1,0 +1,4 @@
+This is an invalid input file.
+It has a bad character right here: –
+There's more input, but the program
+shouldn't make it down here.

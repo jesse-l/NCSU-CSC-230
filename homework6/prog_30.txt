@@ -1,0 +1,78 @@
+# Just exercising the and and or operators, if you implemented them.
+{
+  # a couple of variables holding boolean values
+  set t 1
+  set f ""
+
+  # make sure and gives the right values
+
+  set result and f f
+  print "Should be empty string:"
+  print result
+  print "\n"
+
+  set result and t f
+  print "Should be empty string:"
+  print result
+  print "\n"
+
+  set result and f t
+  print "Should be empty string:"
+  print result
+  print "\n"
+
+  set result and t t
+  print "Should be true:"
+  print result
+  print "\n"
+
+  # make or and gives the right values
+
+  set result or f f
+  print "Should be empty string:"
+  print result
+  print "\n"
+
+  set result or t f
+  print "Should be true:"
+  print result
+  print "\n"
+
+  set result or f t
+  print "Should be true:"
+  print result
+  print "\n"
+
+  set result or t t
+  print "Should be true:"
+  print result
+  print "\n"
+
+  # A couple of variables to help test the short circuiting
+  set x 0
+  set y 0
+
+  and set x "" set y 25
+  print "Should be 0:"
+  print y
+  print "\n"  
+
+  and set x "t" set y 15
+  print "Should be 15:"
+  print y
+  print "\n"  
+
+
+  set x 0
+  set y 0
+
+  or set x "t" set y 25
+  print "Should be 0:"
+  print y
+  print "\n"  
+
+  or set x "" set y 15
+  print "Should be 15:"
+  print y
+  print "\n"  
+}

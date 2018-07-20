@@ -1,0 +1,13 @@
+# . #
+left #		# #
+left # #  #
+left #   #   #
+left #      .  #
+forward .		.					.
+forward #	a #
+left	#		.	#
+forward     ###
+forward  .a#
+quit
+
+Testing for the spacing between characters and running through a wall.

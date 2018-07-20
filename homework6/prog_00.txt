@@ -1,0 +1,54 @@
+#This program is a simple test of every function that should be
+#implemented in the project.
+{
+#This test the subtraction part of the language
+print "Should print 3(5-2) below:\n"
+print sub 5 2
+print "\n"
+
+#This test the multiplication part of the language
+print "Should print 10(5*2) below:\n"
+print mul 5 2
+print "\n"
+
+#This test the division part of the language
+print "Should print 2(4/2) below:\n"
+print div 4 2
+print "\n"
+print "Should print 1(4/3) below:\n"
+print div 4 3
+print "\n"
+
+#this test the equal par of the language
+print "Should print true(2=2) below:\n"
+print equal 2 2
+print "\n"
+print "Should print blank line(3!=1) below:\n"
+print equal 3 1
+print "\n"
+
+#Test less statement
+print "Should print true(3<5) below:\n"
+print less 3 5
+print "\n"
+print "Should print a blank line below:\n"
+print less 20 2
+print "\n"
+
+#Test and statement
+print "Should print true(3&3) below:\n"
+print and 3 3
+print "\n"
+
+#Test if statement
+print "Should print 9(if(5=5){4+5}) below:\n"
+print if equal 5 5 add 4 5
+print "\n"
+
+#Test setting variables
+print "Try setting a variable x as 5\n"
+set xb 5
+print "The variable was set\n"
+print xb
+print "\n"
+}

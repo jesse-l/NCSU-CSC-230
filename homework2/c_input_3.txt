@@ -1,0 +1,4 @@
+This file has no
+comments.  That's
+OK.  Not every
+file has to.

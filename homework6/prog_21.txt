@@ -1,0 +1,3 @@
+# you can't have an empty block expression.
+{
+}
